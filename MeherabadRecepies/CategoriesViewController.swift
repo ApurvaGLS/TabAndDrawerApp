@@ -11,6 +11,7 @@ import UIKit
 class CategoriesViewController: UIViewController {
 
     var barButtonItem: UIBarButtonItem!
+    var Drawer: KYDrawerController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +19,11 @@ class CategoriesViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-           print("In Categories")
-           setupNavigationBar()
-           addLeftMenuButton()
+        Drawer = self.navigationController?.parent as? KYDrawerController
+        Drawer?.screenEdgePanGestureEnabled = true
+        
+        setupNavigationBar()
+        addLeftMenuButton()
      }
     
     func setupNavigationBar() {
@@ -48,6 +51,6 @@ class CategoriesViewController: UIViewController {
     }
     
     @objc func menuButtonPressed() {
-        print("Button Pressed")
+        Drawer?.setDrawerState(.opened, animated: true)
     }
 }

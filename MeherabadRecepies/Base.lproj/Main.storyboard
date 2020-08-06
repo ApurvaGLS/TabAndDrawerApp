@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dfd-OT-JOt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W9e-dg-k4V">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -26,20 +26,21 @@
             </objects>
             <point key="canvasLocation" x="1766" y="367"/>
         </scene>
-        <!--View Controller-->
+        <!--Drawer View Controller-->
         <scene sceneID="Y6H-8y-Xxp">
             <objects>
-                <viewController id="QVp-sP-tpf" sceneMemberID="viewController">
+                <viewController id="QVp-sP-tpf" customClass="DrawerViewController" customModule="MeherabadRecepies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="swR-VG-62f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Soh-UK-dF1"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8NG-qI-Z89"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Om-H0-eTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="-613"/>
+            <point key="canvasLocation" x="848" y="-613"/>
         </scene>
         <!--Recepies-->
         <scene sceneID="aur-EZ-NFf">
@@ -57,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LiM-Ke-4n1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1766" y="-281"/>
+            <point key="canvasLocation" x="1765" y="-290"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JQF-S8-sq4">
@@ -87,9 +88,36 @@
             </objects>
             <point key="canvasLocation" x="848" y="42"/>
         </scene>
+        <!--Drawer Controller-->
+        <scene sceneID="pqI-0p-R9z">
+            <objects>
+                <viewController id="W9e-dg-k4V" customClass="KYDrawerController" customModule="MeherabadRecepies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D7U-MA-kuE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="h2J-BL-noI"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="mainSegueIdentifier" value="main"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="drawerSegueIdentifier" value="drawer"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="drawerWidth">
+                            <real key="value" value="300"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="a9O-rk-qIp" kind="custom" identifier="drawer" customClass="KYEmbedDrawerControllerSegue" customModule="MeherabadRecepies" customModuleProvider="target" id="tFK-fN-Opv"/>
+                        <segue destination="dfd-OT-JOt" kind="custom" identifier="main" customClass="KYEmbedMainControllerSegue" customModule="MeherabadRecepies" customModuleProvider="target" id="4vB-8g-LYb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z56-Kz-IBW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695" y="-255"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Tu-Vt-UlI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWS-Gp-XTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dfd-OT-JOt" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xf2-MQ-iIe">
@@ -101,9 +129,26 @@
                         <segue destination="a7P-DP-ewe" kind="relationship" relationship="rootViewController" id="lGK-jr-qjn"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JWS-Gp-XTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="93" y="42"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hbj-ww-4UV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a9O-rk-qIp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5kK-nQ-opf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QVp-sP-tpf" kind="relationship" relationship="rootViewController" id="ftv-Of-Edk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2i-tT-G8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="-613"/>
         </scene>
     </scenes>
     <resources>

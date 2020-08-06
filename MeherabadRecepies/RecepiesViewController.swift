@@ -11,6 +11,7 @@ import UIKit
 class RecepiesViewController: UIViewController {
 
     var barButtonItem: UIBarButtonItem!
+    var Drawer: KYDrawerController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,9 @@ class RecepiesViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("In Recepies")
+        Drawer = self.navigationController?.parent as? KYDrawerController
+        Drawer?.screenEdgePanGestureEnabled = true
+        
         setupNavigationBar()
         addLeftMenuButton()
     }
@@ -49,6 +52,6 @@ class RecepiesViewController: UIViewController {
     }
     
     @objc func menuButtonPressed() {
-        print("Button Pressed")
+        Drawer?.setDrawerState(.opened, animated: true)
     }
 }
