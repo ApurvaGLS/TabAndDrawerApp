@@ -15,6 +15,10 @@
 		53FD147424DBB9EE00EC90AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FD147224DBB9EE00EC90AE /* LaunchScreen.storyboard */; };
 		53FD147C24DBC78E00EC90AE /* RecepiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD147B24DBC78E00EC90AE /* RecepiesViewController.swift */; };
 		53FD147E24DBC7A500EC90AE /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD147D24DBC7A500EC90AE /* CategoriesViewController.swift */; };
+		53FD148124DBDEA000EC90AE /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD148024DBDEA000EC90AE /* KYEmbedMainControllerSegue.swift */; };
+		53FD148324DBDEA500EC90AE /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD148224DBDEA500EC90AE /* KYEmbedDrawerControllerSegue.swift */; };
+		53FD148524DBDEA900EC90AE /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD148424DBDEA900EC90AE /* KYDrawerController.swift */; };
+		53FD148A24DBE00F00EC90AE /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD148924DBE00F00EC90AE /* DrawerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		53FD147524DBB9EE00EC90AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53FD147B24DBC78E00EC90AE /* RecepiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepiesViewController.swift; sourceTree = "<group>"; };
 		53FD147D24DBC7A500EC90AE /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		53FD148024DBDEA000EC90AE /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
+		53FD148224DBDEA500EC90AE /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
+		53FD148424DBDEA900EC90AE /* KYDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYDrawerController.swift; sourceTree = "<group>"; };
+		53FD148924DBE00F00EC90AE /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		9D26DFC5C93EBF87A84FD5CB /* Pods-MeherabadRecepies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeherabadRecepies.release.xcconfig"; path = "Target Support Files/Pods-MeherabadRecepies/Pods-MeherabadRecepies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,8 +81,28 @@
 				53FD147524DBB9EE00EC90AE /* Info.plist */,
 				53FD147B24DBC78E00EC90AE /* RecepiesViewController.swift */,
 				53FD147D24DBC7A500EC90AE /* CategoriesViewController.swift */,
+				53FD148824DBDFEE00EC90AE /* Drawer */,
+				53FD147F24DBDE6400EC90AE /* KYDrawerClasses */,
 			);
 			path = MeherabadRecepies;
+			sourceTree = "<group>";
+		};
+		53FD147F24DBDE6400EC90AE /* KYDrawerClasses */ = {
+			isa = PBXGroup;
+			children = (
+				53FD148424DBDEA900EC90AE /* KYDrawerController.swift */,
+				53FD148024DBDEA000EC90AE /* KYEmbedMainControllerSegue.swift */,
+				53FD148224DBDEA500EC90AE /* KYEmbedDrawerControllerSegue.swift */,
+			);
+			path = KYDrawerClasses;
+			sourceTree = "<group>";
+		};
+		53FD148824DBDFEE00EC90AE /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				53FD148924DBE00F00EC90AE /* DrawerViewController.swift */,
+			);
+			path = Drawer;
 			sourceTree = "<group>";
 		};
 		6CF9F6F4DE9D38CEFF2038CC /* Pods */ = {
@@ -191,8 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FD148324DBDEA500EC90AE /* KYEmbedDrawerControllerSegue.swift in Sources */,
+				53FD148A24DBE00F00EC90AE /* DrawerViewController.swift in Sources */,
 				53FD146C24DBB9EC00EC90AE /* ViewController.swift in Sources */,
 				53FD146824DBB9EC00EC90AE /* AppDelegate.swift in Sources */,
+				53FD148124DBDEA000EC90AE /* KYEmbedMainControllerSegue.swift in Sources */,
+				53FD148524DBDEA900EC90AE /* KYDrawerController.swift in Sources */,
 				53FD147C24DBC78E00EC90AE /* RecepiesViewController.swift in Sources */,
 				53FD147E24DBC7A500EC90AE /* CategoriesViewController.swift in Sources */,
 			);
