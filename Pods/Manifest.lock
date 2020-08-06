@@ -1,0 +1,16 @@
+PODS:
+  - KYDrawerController (2.1.0)
+
+DEPENDENCIES:
+  - KYDrawerController
+
+SPEC REPOS:
+  trunk:
+    - KYDrawerController
+
+SPEC CHECKSUMS:
+  KYDrawerController: baad0e63b09c0cb564bd48f0f7f70f45d9176ebc
+
+PODFILE CHECKSUM: b729fb0c27b1f0c3d1d2688d13c6e8cdfaee4f47
+
+COCOAPODS: 1.9.3
