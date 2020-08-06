@@ -9,17 +9,13 @@
 import UIKit
 
 class DrawerViewController: UIViewController {
+    
+    var Drawer: KYDrawerController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.interactivePopGestureRecognizer!.isEnabled = false
         self.navigationController?.navigationBar.isHidden = true
-        print("In Drawer")
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
-
 }
 
