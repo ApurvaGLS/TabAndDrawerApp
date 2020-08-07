@@ -1,0 +1,30 @@
+ [
+  {
+    "menu_name": "All Recepies",
+    "menu_image": "Recepies",
+    "controller_name": "RecepiesViewController",
+    "type": "storyboard",
+    "submenu": []
+	},
+  {
+    "menu_name": "Favourites",
+    "menu_image": "Favourite",
+    "controller_name": "CategoriesViewController",
+    "type": "storyboard",
+    "submenu": []
+  },
+  {
+    "menu_name": "Share'",
+    "menu_image": "Share",
+    "controller_name": "SetShareApp",
+    "type": "function",
+    "submenu": []
+  },
+  {
+    "menu_name": "About",
+    "menu_image": "About",
+    "controller_name": "SetAbout",
+    "type": "function",
+    "submenu": []
+  },
+]

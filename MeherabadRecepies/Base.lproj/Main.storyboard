@@ -43,7 +43,19 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmP-XT-eCd">
                                 <rect key="frame" x="0.0" y="281" width="414" height="615"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-Ni-uxh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="615"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TZC-Ni-uxh" secondAttribute="bottom" id="FPH-EP-Nqr"/>
+                                    <constraint firstAttribute="trailing" secondItem="TZC-Ni-uxh" secondAttribute="trailing" id="dQU-Xd-NcV"/>
+                                    <constraint firstItem="TZC-Ni-uxh" firstAttribute="leading" secondItem="qmP-XT-eCd" secondAttribute="leading" id="tLw-kP-Zue"/>
+                                    <constraint firstItem="TZC-Ni-uxh" firstAttribute="top" secondItem="qmP-XT-eCd" secondAttribute="top" id="wfu-Do-zUU"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

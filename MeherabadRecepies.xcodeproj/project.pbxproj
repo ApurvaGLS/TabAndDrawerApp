@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A856CFBE74CB91F5883830B /* libPods-MeherabadRecepies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC4191440BEC6A25DC01A77 /* libPods-MeherabadRecepies.a */; };
+		53C4BD2424DC2D9E00CCADEE /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 53C4BD2324DC2D9E00CCADEE /* menu.json */; };
 		53FD146824DBB9EC00EC90AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD146724DBB9EC00EC90AE /* AppDelegate.swift */; };
 		53FD146F24DBB9EC00EC90AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FD146D24DBB9EC00EC90AE /* Main.storyboard */; };
 		53FD147124DBB9EE00EC90AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FD147024DBB9EE00EC90AE /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		0F408CCFE8180E25C5E1C5A4 /* Pods-MeherabadRecepies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeherabadRecepies.debug.xcconfig"; path = "Target Support Files/Pods-MeherabadRecepies/Pods-MeherabadRecepies.debug.xcconfig"; sourceTree = "<group>"; };
 		1BC4191440BEC6A25DC01A77 /* libPods-MeherabadRecepies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeherabadRecepies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C4BD2324DC2D9E00CCADEE /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		53FD146424DBB9EC00EC90AE /* MeherabadRecepies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeherabadRecepies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FD146724DBB9EC00EC90AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53FD146E24DBB9EC00EC90AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		53FD146624DBB9EC00EC90AE /* MeherabadRecepies */ = {
 			isa = PBXGroup;
 			children = (
+				53C4BD2324DC2D9E00CCADEE /* menu.json */,
 				53FD146724DBB9EC00EC90AE /* AppDelegate.swift */,
 				53FD146D24DBB9EC00EC90AE /* Main.storyboard */,
 				53FD147024DBB9EE00EC90AE /* Assets.xcassets */,
@@ -188,6 +191,7 @@
 			files = (
 				53FD147424DBB9EE00EC90AE /* LaunchScreen.storyboard in Resources */,
 				53FD147124DBB9EE00EC90AE /* Assets.xcassets in Resources */,
+				53C4BD2424DC2D9E00CCADEE /* menu.json in Resources */,
 				53FD146F24DBB9EC00EC90AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
