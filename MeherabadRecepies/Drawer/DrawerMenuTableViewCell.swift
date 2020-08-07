@@ -10,6 +10,9 @@ import UIKit
 
 class DrawerMenuTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var menuImage: UIImageView!
+    @IBOutlet weak var menuName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

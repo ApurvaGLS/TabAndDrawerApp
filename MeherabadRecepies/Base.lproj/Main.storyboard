@@ -47,6 +47,10 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-Ni-uxh">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="615"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="QVp-sP-tpf" id="H6x-PR-UEy"/>
+                                            <outlet property="delegate" destination="QVp-sP-tpf" id="jwC-d4-qFU"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -71,6 +75,9 @@
                         <viewLayoutGuide key="safeArea" id="Soh-UK-dF1"/>
                     </view>
                     <navigationItem key="navigationItem" id="8NG-qI-Z89"/>
+                    <connections>
+                        <outlet property="menuTable" destination="TZC-Ni-uxh" id="Ani-GU-Dsq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Om-H0-eTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
