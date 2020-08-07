@@ -12,7 +12,7 @@
     "type": "storyboard"
   },
   {
-    "menu_name": "Share'",
+    "menu_name": "Share",
     "menu_image": "Share",
     "controller_name": "SetShareApp",
     "type": "function"

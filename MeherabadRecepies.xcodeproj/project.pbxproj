@@ -56,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53C4238024DDA811001B80F9 /* Menu Cell */ = {
+			isa = PBXGroup;
+			children = (
+				53C4237C24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift */,
+				53C4237D24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib */,
+			);
+			path = "Menu Cell";
+			sourceTree = "<group>";
+		};
 		53C4BD2224DBF5B000CCADEE /* MainTabScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +95,6 @@
 		53FD146624DBB9EC00EC90AE /* MeherabadRecepies */ = {
 			isa = PBXGroup;
 			children = (
-				53C4BD2324DC2D9E00CCADEE /* menu.json */,
 				53FD146724DBB9EC00EC90AE /* AppDelegate.swift */,
 				53FD146D24DBB9EC00EC90AE /* Main.storyboard */,
 				53FD147024DBB9EE00EC90AE /* Assets.xcassets */,
@@ -112,9 +120,9 @@
 		53FD148824DBDFEE00EC90AE /* Drawer */ = {
 			isa = PBXGroup;
 			children = (
+				53C4BD2324DC2D9E00CCADEE /* menu.json */,
 				53FD148924DBE00F00EC90AE /* DrawerViewController.swift */,
-				53C4237C24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift */,
-				53C4237D24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib */,
+				53C4238024DDA811001B80F9 /* Menu Cell */,
 			);
 			path = Drawer;
 			sourceTree = "<group>";

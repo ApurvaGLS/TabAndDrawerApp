@@ -48,7 +48,8 @@ extension DrawerViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = menuTable.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! DrawerMenuTableViewCell
-        cell.menuName.text = "menu"
+        cell.menuName.text = menuArray[indexPath.row]["menu_name"] as? String
+        cell.menuImage.image = UIImage(named: menuArray[indexPath.row]["menu_image"] as! String)
         return cell
     }
 }
