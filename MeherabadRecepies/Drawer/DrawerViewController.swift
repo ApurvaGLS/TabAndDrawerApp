@@ -17,7 +17,7 @@ class DrawerViewController: UIViewController {
         super.viewDidLoad()
         
         menuArray = [[String:Any]]()
-        
+        Drawer = self.navigationController?.parent as? KYDrawerController
         self.navigationController?.interactivePopGestureRecognizer!.isEnabled = false
         self.navigationController?.navigationBar.isHidden = true
         
@@ -55,8 +55,15 @@ extension DrawerViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let Type = menuArray[indexPath.row]["type"] as! String
-        if(Type == "Storyboard"){
-           print("TYPE \(Type)")
+        if(Type == "storyboard"){
+            if #available(iOS 13.0, *) {
+                let aboutController : UIViewController = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(identifier: menuArray[indexPath.row]["controller_name"] as! String)
+                let navController = UINavigationController.init(rootViewController: aboutController)
+                Drawer?.mainViewController = navController
+                Drawer?.setDrawerState(.closed, animated: true)
+            } else {
+                // Fallback on earlier versions
+            }
         }else{
           Drawer?.setDrawerState(.closed, animated: true)
           let s : Selector = NSSelectorFromString(menuArray[indexPath.row]["controller_name"] as! String)

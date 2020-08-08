@@ -10,7 +10,7 @@
 		1A856CFBE74CB91F5883830B /* libPods-MeherabadRecepies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC4191440BEC6A25DC01A77 /* libPods-MeherabadRecepies.a */; };
 		53C4237E24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4237C24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift */; };
 		53C4237F24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C4237D24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib */; };
-		53C4238224DE5461001B80F9 /* MenuTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4238124DE5461001B80F9 /* MenuTabBarViewController.swift */; };
+		53C4238424DE5E64001B80F9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4238324DE5E64001B80F9 /* AboutViewController.swift */; };
 		53C4BD2424DC2D9E00CCADEE /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 53C4BD2324DC2D9E00CCADEE /* menu.json */; };
 		53FD146824DBB9EC00EC90AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD146724DBB9EC00EC90AE /* AppDelegate.swift */; };
 		53FD146F24DBB9EC00EC90AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FD146D24DBB9EC00EC90AE /* Main.storyboard */; };
@@ -29,7 +29,7 @@
 		1BC4191440BEC6A25DC01A77 /* libPods-MeherabadRecepies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeherabadRecepies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C4237C24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerMenuTableViewCell.swift; sourceTree = "<group>"; };
 		53C4237D24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawerMenuTableViewCell.xib; sourceTree = "<group>"; };
-		53C4238124DE5461001B80F9 /* MenuTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarViewController.swift; sourceTree = "<group>"; };
+		53C4238324DE5E64001B80F9 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		53C4BD2324DC2D9E00CCADEE /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		53FD146424DBB9EC00EC90AE /* MeherabadRecepies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeherabadRecepies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FD146724DBB9EC00EC90AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,10 +67,17 @@
 			path = "Menu Cell";
 			sourceTree = "<group>";
 		};
+		53C4238524DE6321001B80F9 /* About Screen */ = {
+			isa = PBXGroup;
+			children = (
+				53C4238324DE5E64001B80F9 /* AboutViewController.swift */,
+			);
+			path = "About Screen";
+			sourceTree = "<group>";
+		};
 		53C4BD2224DBF5B000CCADEE /* MainTabScreen */ = {
 			isa = PBXGroup;
 			children = (
-				53C4238124DE5461001B80F9 /* MenuTabBarViewController.swift */,
 				53FD147B24DBC78E00EC90AE /* RecepiesViewController.swift */,
 				53FD147D24DBC7A500EC90AE /* CategoriesViewController.swift */,
 			);
@@ -103,9 +110,10 @@
 				53FD147024DBB9EE00EC90AE /* Assets.xcassets */,
 				53FD147224DBB9EE00EC90AE /* LaunchScreen.storyboard */,
 				53FD147524DBB9EE00EC90AE /* Info.plist */,
+				53FD147F24DBDE6400EC90AE /* KYDrawerClasses */,
 				53FD148824DBDFEE00EC90AE /* Drawer */,
 				53C4BD2224DBF5B000CCADEE /* MainTabScreen */,
-				53FD147F24DBDE6400EC90AE /* KYDrawerClasses */,
+				53C4238524DE6321001B80F9 /* About Screen */,
 			);
 			path = MeherabadRecepies;
 			sourceTree = "<group>";
@@ -246,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53C4238224DE5461001B80F9 /* MenuTabBarViewController.swift in Sources */,
 				53FD148324DBDEA500EC90AE /* KYEmbedDrawerControllerSegue.swift in Sources */,
 				53FD148A24DBE00F00EC90AE /* DrawerViewController.swift in Sources */,
 				53FD146824DBB9EC00EC90AE /* AppDelegate.swift in Sources */,
@@ -254,6 +261,7 @@
 				53FD148524DBDEA900EC90AE /* KYDrawerController.swift in Sources */,
 				53C4237E24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift in Sources */,
 				53FD147C24DBC78E00EC90AE /* RecepiesViewController.swift in Sources */,
+				53C4238424DE5E64001B80F9 /* AboutViewController.swift in Sources */,
 				53FD147E24DBC7A500EC90AE /* CategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

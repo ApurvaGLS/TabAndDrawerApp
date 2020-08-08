@@ -2,13 +2,13 @@
   {
     "menu_name": "All Recepies",
     "menu_image": "Recepies",
-    "controller_name": "MenuTabBarViewController",
+    "controller_name": "Tab",
     "type": "storyboard"
 	},
   {
     "menu_name": "Favourites",
     "menu_image": "Favourite",
-    "controller_name": "MenuTabBarViewController",
+    "controller_name": "Tab",
     "type": "storyboard"
   },
   {
@@ -20,7 +20,7 @@
   {
     "menu_name": "About",
     "menu_image": "About",
-    "controller_name": "SetAbout",
+    "controller_name": "About",
     "type": "storyboard"
   },
 ]
