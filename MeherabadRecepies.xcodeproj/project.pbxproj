@@ -11,6 +11,8 @@
 		53C4237E24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4237C24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift */; };
 		53C4237F24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C4237D24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib */; };
 		53C4238424DE5E64001B80F9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4238324DE5E64001B80F9 /* AboutViewController.swift */; };
+		53C4238A24DEF926001B80F9 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4238824DEF926001B80F9 /* CategoryTableViewCell.swift */; };
+		53C4238B24DEF926001B80F9 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C4238924DEF926001B80F9 /* CategoryTableViewCell.xib */; };
 		53C4BD2424DC2D9E00CCADEE /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 53C4BD2324DC2D9E00CCADEE /* menu.json */; };
 		53FD146824DBB9EC00EC90AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD146724DBB9EC00EC90AE /* AppDelegate.swift */; };
 		53FD146F24DBB9EC00EC90AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FD146D24DBB9EC00EC90AE /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		53C4237C24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerMenuTableViewCell.swift; sourceTree = "<group>"; };
 		53C4237D24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawerMenuTableViewCell.xib; sourceTree = "<group>"; };
 		53C4238324DE5E64001B80F9 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		53C4238824DEF926001B80F9 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		53C4238924DEF926001B80F9 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		53C4BD2324DC2D9E00CCADEE /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		53FD146424DBB9EC00EC90AE /* MeherabadRecepies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeherabadRecepies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FD146724DBB9EC00EC90AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,11 +79,29 @@
 			path = "About Screen";
 			sourceTree = "<group>";
 		};
-		53C4BD2224DBF5B000CCADEE /* MainTabScreen */ = {
+		53C4238624DEF8C9001B80F9 /* Recepies */ = {
 			isa = PBXGroup;
 			children = (
 				53FD147B24DBC78E00EC90AE /* RecepiesViewController.swift */,
+			);
+			path = Recepies;
+			sourceTree = "<group>";
+		};
+		53C4238724DEF8DC001B80F9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
 				53FD147D24DBC7A500EC90AE /* CategoriesViewController.swift */,
+				53C4238824DEF926001B80F9 /* CategoryTableViewCell.swift */,
+				53C4238924DEF926001B80F9 /* CategoryTableViewCell.xib */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		53C4BD2224DBF5B000CCADEE /* MainTabScreen */ = {
+			isa = PBXGroup;
+			children = (
+				53C4238624DEF8C9001B80F9 /* Recepies */,
+				53C4238724DEF8DC001B80F9 /* Categories */,
 			);
 			path = MainTabScreen;
 			sourceTree = "<group>";
@@ -217,6 +239,7 @@
 				53FD147424DBB9EE00EC90AE /* LaunchScreen.storyboard in Resources */,
 				53FD147124DBB9EE00EC90AE /* Assets.xcassets in Resources */,
 				53C4BD2424DC2D9E00CCADEE /* menu.json in Resources */,
+				53C4238B24DEF926001B80F9 /* CategoryTableViewCell.xib in Resources */,
 				53C4237F24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib in Resources */,
 				53FD146F24DBB9EC00EC90AE /* Main.storyboard in Resources */,
 			);
@@ -259,6 +282,7 @@
 				53FD146824DBB9EC00EC90AE /* AppDelegate.swift in Sources */,
 				53FD148124DBDEA000EC90AE /* KYEmbedMainControllerSegue.swift in Sources */,
 				53FD148524DBDEA900EC90AE /* KYDrawerController.swift in Sources */,
+				53C4238A24DEF926001B80F9 /* CategoryTableViewCell.swift in Sources */,
 				53C4237E24DD99CB001B80F9 /* DrawerMenuTableViewCell.swift in Sources */,
 				53FD147C24DBC78E00EC90AE /* RecepiesViewController.swift in Sources */,
 				53C4238424DE5E64001B80F9 /* AboutViewController.swift in Sources */,
