@@ -72,7 +72,18 @@ extension DrawerViewController : UITableViewDelegate, UITableViewDataSource{
     }
     
     @objc func SetShareApp(){
-        print("Tap on Share")
+        if let urlStr = NSURL(string: "http://www.vztrack.in") {
+            let objectsToShare = [urlStr]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                if let popup = activityVC.popoverPresentationController {
+                    popup.sourceView = self.view
+                    popup.sourceRect = CGRect(x: self.view.frame.size.width / 2, y: self.view.frame.size.height / 4, width: 0, height: 0)
+                }
+            }
+            self.present(activityVC, animated: true, completion: nil)
+        }
     }
 }
 
