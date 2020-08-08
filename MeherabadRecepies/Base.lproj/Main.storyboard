@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="1765" y="-290"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Menu Tab Bar View Controller-->
         <scene sceneID="JQF-S8-sq4">
             <objects>
-                <tabBarController id="a7P-DP-ewe" sceneMemberID="viewController">
+                <tabBarController id="a7P-DP-ewe" customClass="MenuTabBarViewController" customModule="MeherabadRecepies" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="mk1-Us-hBj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kku-ji-qG5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

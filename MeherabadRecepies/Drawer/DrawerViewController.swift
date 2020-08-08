@@ -13,7 +13,6 @@ class DrawerViewController: UIViewController {
     var Drawer: KYDrawerController?
     var menuArray : [[String:Any]]!
     @IBOutlet weak var menuTable: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +40,7 @@ class DrawerViewController: UIViewController {
     }
 }
 
+
 extension DrawerViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         menuArray.count
@@ -51,6 +51,21 @@ extension DrawerViewController : UITableViewDelegate, UITableViewDataSource{
         cell.menuName.text = menuArray[indexPath.row]["menu_name"] as? String
         cell.menuImage.image = UIImage(named: menuArray[indexPath.row]["menu_image"] as! String)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let Type = menuArray[indexPath.row]["type"] as! String
+        if(Type == "Storyboard"){
+           print("TYPE \(Type)")
+        }else{
+          Drawer?.setDrawerState(.closed, animated: true)
+          let s : Selector = NSSelectorFromString(menuArray[indexPath.row]["controller_name"] as! String)
+          perform(s)
+        }
+    }
+    
+    @objc func SetShareApp(){
+        print("Tap on Share")
     }
 }
 
