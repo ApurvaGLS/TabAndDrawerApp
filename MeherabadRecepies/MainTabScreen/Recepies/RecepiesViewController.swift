@@ -18,6 +18,7 @@ class RecepiesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        registercell()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,6 +27,10 @@ class RecepiesViewController: UIViewController {
         
         setupNavigationBar()
         addLeftMenuButton()
+    }
+    
+    func registercell(){
+        recepiesCollectionView.register(UINib(nibName: "RecepieCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "recepieCell")
     }
     
     func setupNavigationBar() {
@@ -54,5 +59,24 @@ class RecepiesViewController: UIViewController {
     
     @objc func menuButtonPressed() {
         Drawer?.setDrawerState(.opened, animated: true)
+    }
+}
+
+extension  RecepiesViewController : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = recepiesCollectionView.dequeueReusableCell(withReuseIdentifier: "recepieCell", for: indexPath) as! RecepieCollectionViewCell
+        let cell = recepiesCollectionView.dequeueReusableCell(withReuseIdentifier: "recCell", for: indexPath)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
+        let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
+        let size:CGFloat = (recepiesCollectionView.frame.size.width - space) / 2.0
+        return CGSize(width: size, height: size)
     }
 }
