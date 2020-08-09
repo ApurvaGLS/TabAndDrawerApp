@@ -13,6 +13,7 @@
 		53C4238424DE5E64001B80F9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4238324DE5E64001B80F9 /* AboutViewController.swift */; };
 		53C4238A24DEF926001B80F9 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4238824DEF926001B80F9 /* CategoryTableViewCell.swift */; };
 		53C4238B24DEF926001B80F9 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C4238924DEF926001B80F9 /* CategoryTableViewCell.xib */; };
+		53C4239024DFAE4B001B80F9 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53C4238F24DFAE4A001B80F9 /* images.jpeg */; };
 		53C4BD2424DC2D9E00CCADEE /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 53C4BD2324DC2D9E00CCADEE /* menu.json */; };
 		53FD146824DBB9EC00EC90AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD146724DBB9EC00EC90AE /* AppDelegate.swift */; };
 		53FD146F24DBB9EC00EC90AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FD146D24DBB9EC00EC90AE /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		53C4238324DE5E64001B80F9 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		53C4238824DEF926001B80F9 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		53C4238924DEF926001B80F9 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		53C4238F24DFAE4A001B80F9 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		53C4BD2324DC2D9E00CCADEE /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		53FD146424DBB9EC00EC90AE /* MeherabadRecepies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeherabadRecepies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FD146724DBB9EC00EC90AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		53C4238C24DFA911001B80F9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				53C4238F24DFAE4A001B80F9 /* images.jpeg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		53C4BD2224DBF5B000CCADEE /* MainTabScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				53FD146624DBB9EC00EC90AE /* MeherabadRecepies */,
+				53C4238C24DFA911001B80F9 /* Images */,
 				53FD146524DBB9EC00EC90AE /* Products */,
 				6CF9F6F4DE9D38CEFF2038CC /* Pods */,
 				FFCB3CD4E438F9588FBBCA0C /* Frameworks */,
@@ -239,6 +250,7 @@
 				53FD147424DBB9EE00EC90AE /* LaunchScreen.storyboard in Resources */,
 				53FD147124DBB9EE00EC90AE /* Assets.xcassets in Resources */,
 				53C4BD2424DC2D9E00CCADEE /* menu.json in Resources */,
+				53C4239024DFAE4B001B80F9 /* images.jpeg in Resources */,
 				53C4238B24DEF926001B80F9 /* CategoryTableViewCell.xib in Resources */,
 				53C4237F24DD99CB001B80F9 /* DrawerMenuTableViewCell.xib in Resources */,
 				53FD146F24DBB9EC00EC90AE /* Main.storyboard in Resources */,

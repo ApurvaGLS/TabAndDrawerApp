@@ -16,8 +16,8 @@ class CategoriesViewController: UIViewController {
     @IBOutlet weak var categoriesTableView: UITableView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        super.viewDidLoad()        
+        registercell()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,6 +26,7 @@ class CategoriesViewController: UIViewController {
         
         setupNavigationBar()
         addLeftMenuButton()
+       
      }
     
     func setupNavigationBar() {
@@ -52,7 +53,28 @@ class CategoriesViewController: UIViewController {
         self.navigationController?.navigationBar.topItem?.rightBarButtonItem?.isEnabled = false
     }
     
+    func registercell(){
+        categoriesTableView.register(UINib(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "categoryCell")
+        categoriesTableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 20))
+    }
+    
     @objc func menuButtonPressed() {
         Drawer?.setDrawerState(.opened, animated: true)
     }
+}
+
+extension CategoriesViewController : UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = categoriesTableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as! CategoryTableViewCell
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
+    }
+    
 }
