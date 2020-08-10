@@ -15,10 +15,9 @@ class RecepiesViewController: UIViewController {
     
     @IBOutlet weak var recepiesCollectionView: UICollectionView!
     override func viewDidLoad() {
+       
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-//        registercell()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,10 +26,6 @@ class RecepiesViewController: UIViewController {
         
         setupNavigationBar()
         addLeftMenuButton()
-    }
-    
-    func registercell(){
-        recepiesCollectionView.register(UINib(nibName: "RecepieCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "recepieCell")
     }
     
     func setupNavigationBar() {
@@ -68,9 +63,13 @@ extension  RecepiesViewController : UICollectionViewDelegate,UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = recepiesCollectionView.dequeueReusableCell(withReuseIdentifier: "recepieCell", for: indexPath) as! RecepieCollectionViewCell
         let cell = recepiesCollectionView.dequeueReusableCell(withReuseIdentifier: "recCell", for: indexPath)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailVc = RecepieDetailsViewController.init(nibName: "RecepieDetailsViewController", bundle: .main)
+        self.navigationController?.pushViewController(detailVc, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
